@@ -1,0 +1,36 @@
+# LyX backups
+*.lyx~
+*.bak
+
+# LaTeX/LyX generated files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# Reproducible build output
+/build/
+/build-diagnostic/
+/diagnostic-build/
+
+# Local diagnostics
+*-test.pdf
+*-test.txt
+lyx-debug-*.txt
+
+# One-off migration and bibliography checks
+/phdthesis-lyx25.lyx
+/biblio-first20.txt
+/capture2.pdf
+
+# Local PDF render checks
+/tmp/

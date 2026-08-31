@@ -1,0 +1,156 @@
+\documentclass[a4paper,12pt,titlepage,twoside]{article}
+%\usepackage{t1enc} 
+\usepackage[latin2]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[magyar]{babel}
+\def\magyarOptions{defaults=prettiest}
+%\usepackage{times}
+%\usepackage{mathptm}
+\usepackage{amsmath}
+%\usepackage{indentfirst}
+\usepackage{fancyhdr}
+\usepackage{fancybox}
+%\usepackage[dvips]{graphicx} 
+\usepackage[pdftex]{graphicx} 
+\usepackage{enumerate}
+\usepackage{hyperref}
+\usepackage{afterpage}
+\frenchspacing
+
+% part of the hyperref bundle
+\usepackage{ifpdf}
+\ifpdf % if pdflatex is used
+
+% set fonts for nicer pdf view
+\IfFileExists{lmodern.sty}{\usepackage{lmodern}}{}
+\fi % end if pdflatex is use
+
+%% ELVÁLASZTÁSI BEÁLLÍTÁSOK %%
+\hyphenation{mel-lék-e-lem mel-lék-e-le-mek meg-egye-zik pár-be-széd-ab-lak program ki-szállító-út Erdútterv maCADam ol-dal-e-sés EUIR geo-in-for-má-ci-ós}
+
+% Az Erdútterv formázott kiírását végzi el az \erdut{} parancs
+\newcommand{\erdut}[1]{\textsf{Erdútterv#1}}
+\newcommand{\maCADam}[1]{\textsf{maCADam#1}}
+
+% A fájlnevek és elérési útvonalak formázott kiírását végzi el a \Gpath{} parancs
+\newcommand{\Gpath}[1]{\texttt{#1}}
+
+% A menünevek formázott kiírására szolgál a \Gmenu{} parancs
+\newcommand{\Gmenu}[1]{\textsf{#1}}
+ 
+% Az ablakok nevének formázott kiírása a \Gablak{} paranccsal lehetséges
+\newcommand{\Gablak}[1]{\textsf{#1}}
+
+% Gombok nevének kiírása
+\newcommand{\Ggomb}[1]{\ovalbox{\textsf{#1}}}
+
+% Billenytû formázott kiírása
+\newcommand{\Gbill}[1]{\textsf{<#1>}}
+
+% Koordinátapár kiírása
+\newcommand{\Gkoord}[2]{\textsf{(X=#1 ; Y=#2)}}
+
+% Táblázatok és ábrák sorszámának kiírása
+\renewcommand{\thetable}{\thesection-\arabic{table}}
+\renewcommand{\thefigure}{\thesection-\arabic{figure}}
+
+% Fólianevek
+\newcommand{\Glayer}[1]{\textsf{#1}}
+
+% Url-hivatkozásokhoz
+\newcommand{\Gurl}[1]{\texttt{\underline{#1}}}
+
+%Adattábla neve
+\newcommand{\Gadattabla}[1]{\textsf{\textit{#1}}}
+
+% Bekeretezett kép a soron belül
+\setlength{\fboxsep}{1pt}%
+
+\newcommand{\picbox}[1]{%
+\setlength{\fboxsep}{0pt}%
+\fbox{\includegraphics[height=8pt]{#1}}%
+\setlength{\fboxsep}{1pt}%
+}%
+
+% Bekeretezett kép a soron belül, magasabb
+\setlength{\fboxsep}{1pt}%
+
+\newcommand{\Picbox}[1]{%
+\setlength{\fboxsep}{0pt}%
+\raisebox{-2pt}{\fbox{\includegraphics[height=12pt]{#1}}}%
+\setlength{\fboxsep}{1pt}%
+}%
+
+%\sloppy
+
+\author{Primusz Péter}
+
+\title{\huge{Pályaszerkezet-gazdálkodás az erdészeti feltáróhálózatokon}}
+\date{Sopron, 2012.}
+
+\newcommand{\Section}[1]{\section{#1} \setcounter{table}{0} \setcounter{figure}{0}}
+
+%%%%%%%% OLDALBEÁLLÍTÁSOK %%%%%%%%%%
+%\addtolength{\hoffset}{2.5cm}      %
+                                   %
+%\addtolength{\voffset}{1.25cm}     %
+                                   %
+\setlength{\hoffset}{0cm}         %
+\setlength{\voffset}{-1.25cm}      %
+\setlength{\oddsidemargin}{0cm}  %
+\setlength{\evensidemargin}{0.5cm}   %
+\setlength{\marginparsep}{0.0cm}  %
+\setlength{\marginparwidth}{0.0cm}   %
+\setlength{\textwidth}{15.5cm}     %
+                                   %
+\setlength{\topmargin}{0cm}        %
+\setlength{\textheight}{24.5cm}    %
+\setlength{\headheight}{15pt}      %
+%\setlength{\pdfpageheight}{297mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Forrás: http://mintaka.sdsu.edu/GF/bibliog/latex/latex_top.html
+% ue. /floats.html
+% Alter some LaTeX defaults for better treatment of figures: See p.105
+% of "TeX Unbound" for suggested values.  See pp. 199-200 of Lamport's
+% "LaTeX" book for details.  General parameters, for ALL pages:
+\renewcommand{\topfraction}{0.9}	% max fraction of floats at top
+\renewcommand{\bottomfraction}{0.8}	% max fraction of floats at bottom
+% Parameters for TEXT pages (not float pages):
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4} % 2 may work better 
+\setcounter{dbltopnumber}{2} % for 2-column pages
+\renewcommand{\dbltopfraction}{0.9} % fit big float above 2-col. text
+\renewcommand{\textfraction}{0.07} % allow minimal text w. figs
+% Parameters for FLOAT pages (not text pages):
+\renewcommand{\floatpagefraction}{0.7}	% require fuller float pages
+% N.B.: floatpagefraction MUST be less than topfraction !!
+\renewcommand{\dblfloatpagefraction}{0.7}	% require fuller float pages 
+%remember to use [htp] or [htpb] for placement
+ 
+
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{4}
+
+\begin{document}
+
+\include{cimlap}
+
+\pagestyle{empty}
+
+\include{harmadik}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2ex plus 0.5ex minus 0.2ex}
+
+~
+
+\vspace{2cm}
+
+\begin{flushright}
+\large\emph{Sziklai Zoltán és Primusz József emlékének}
+\end{flushright}
+
+\end{document}

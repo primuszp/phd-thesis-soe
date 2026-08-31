@@ -1,0 +1,109 @@
+#LyX 1.5.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass unswthesis
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+A Chapter Template
+\end_layout
+
+\begin_layout Standard
+This is a UNSW thesis chapter template.
+ Like the 
+\series bold
+main.lyx
+\series default
+ template that includes this one, it is set up to use the UNSW thesis layout.
+\end_layout
+
+\begin_layout Section
+A Section header
+\end_layout
+
+\begin_layout Standard
+You can easily break your chapter into sections.
+\end_layout
+
+\begin_layout Subsection
+The first subsection
+\end_layout
+
+\begin_layout Standard
+...
+ and even subsections
+\begin_inset Foot
+status collapsed
+
+\begin_layout Standard
+This is a footnote.
+ You should consult the LyX documents in the Help menu for more information
+ about markup.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+A Second Section
+\end_layout
+
+\begin_layout Standard
+This second section includes a citation 
+\begin_inset LatexCommand citep
+key "LyX:2007"
+
+\end_inset
+
+ from the bibliography included in the 
+\series bold
+main.lyx
+\series default
+ file.
+ The citation will be displayed as a [?] unless the entire thesis is built
+ from the 
+\series bold
+main.lyx
+\series default
+ file.
+\end_layout
+
+\end_body
+\end_document
