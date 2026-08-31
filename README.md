@@ -1,6 +1,17 @@
-# SOE PhD thesis
+# SOE doktori értekezés
 
-Primusz Péter doktori értekezésének LyX-forrása.
+## Az értekezésről
+
+**Cím:** *Pályaszerkezet-gazdálkodás az erdészeti feltáróhálózatokon*  
+**Szerző:** Primusz Péter  
+**Intézmény:** Nyugat-magyarországi Egyetem, Roth Gyula Erdészeti és Vadgazdálkodási Tudományok Doktori Iskola, Erdészeti Tudomány Program  
+**Helyszín:** Sopron
+
+Az értekezés az erdészeti feltáróutak állapotfelvételével, értékelésével és fenntartásának megalapozásával foglalkozik. Bemutatja a digitális szubjektív állapotfelvétel és -értékelés eszközrendszerét, az ABBA kézi behajlásmérő fejlesztését, valamint az FWD/ABBA deformációs vonalak elemzésére és a pályaszerkezeti rétegek modulusának becslésére kidolgozott módszereket.
+
+## Forrás és fordítás
+
+A fő LyX-fájl: `phdthesis.lyx`.
 
 ## Fordítás
 
